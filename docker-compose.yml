@@ -1,0 +1,9 @@
+version: "3"
+services:
+  receipt-processor:
+    image: receipt-processor
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
